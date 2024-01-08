@@ -6,23 +6,11 @@ Fisheye-OBB is a cutting-edge machine learning project focused on the prediction
 
 ## Table of Contents
 - Introduction
-- Installation
-- Usage
 - Features
 - Model Used
 - Visualization Techniques
-- Dependencies
-- Configuration
 - Examples
-- Troubleshooting
 - Contributors
-- License
-
-## Installation
-*To be provided by the project maintainer.*
-
-## Usage
-*To be provided by the project maintainer.*
 
 ## Features
 Fisheye-OBB offers a range of features specifically designed for oriented bounding box detection in fisheye camera images:
@@ -41,20 +29,8 @@ Visualization plays a crucial role in Fisheye-OBB. The project includes:
 - Functions to display predictions overlaying the fisheye images.
 - Comparative visualizations to evaluate model performance against ground truth.
 
-## Dependencies
-*To be listed based on the project's `requirements.txt` or environment setup files.*
-
-## Configuration
-*Details about configuration options and environment setup.*
-
 ## Examples
 The project includes Jupyter notebooks (`compare_results.ipynb`, `Training_Notebook.ipynb`, `visualize_anchors.ipynb`) that demonstrate the model training, evaluation, and various visualization techniques.
 
-## Troubleshooting
-*Common issues and solutions to be provided by the project maintainer.*
-
 ## Contributors
-*List of individuals or organizations that contributed to Fisheye-OBB.*
-
-## License
-*License information to be provided by the project maintainer.*
+Wyatt Mayor
