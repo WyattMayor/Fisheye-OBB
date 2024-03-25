@@ -4,7 +4,6 @@ import random
 from dataset import iou_rle_tensor
 
 def set_seed(seed):
-    """From MP3"""
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
     torch.manual_seed(seed)
@@ -13,7 +12,6 @@ def set_seed(seed):
     random.seed(seed)
   
 def get_detections(outs):
-    """Coverted to handle anchor boxes with 5 dimensions and binary classification"""
     B, BB, _, _ = outs[0][0].shape
     _, A, _, _ = outs[0][2].shape
     A = A // 5

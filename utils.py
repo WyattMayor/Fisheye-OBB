@@ -1,7 +1,6 @@
 import os
 import pickle
 
-"""Functions taken from mp3"""
 def save_variables(pickle_file_name, var, info, overwrite=False):
   if os.path.exists(pickle_file_name) and overwrite == False:
     raise Exception('{:s} exists and overwrite is false.'.format(pickle_file_name))

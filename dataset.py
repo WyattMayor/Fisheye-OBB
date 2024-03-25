@@ -168,7 +168,6 @@ class Resizer(object):
         return torch.from_numpy(new_image), torch.from_numpy(bboxes), torch.from_numpy(cls), is_crowd, image_id, scale
 
 class Normalizer(object):
-    """Same as mp3 implementation"""
     def __init__(self):
         self.mean = np.array([[[0.485, 0.456, 0.406]]])
         self.std = np.array([[[0.229, 0.224, 0.225]]])
@@ -180,7 +179,6 @@ class Normalizer(object):
         return sample
 
 class UnNormalizer(object):
-    """Same as mp3 implementation"""
     def __init__(self, mean=None, std=None):
         if mean == None:
             self.mean = [0.485, 0.456, 0.406]
@@ -204,7 +202,6 @@ class UnNormalizer(object):
         return tensor
  
 def collater(data):
-    """Altered to handle 5th degree dimension"""
     imgs = [s[0] for s in data]
     bboxes = [s[1] for s in data]
     cls = [s[2] for s in data]
